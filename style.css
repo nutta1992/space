@@ -1,0 +1,427 @@
+* {
+	box-sizing: border-box;
+}
+
+@import url(//db.onlinewebfonts.com/c/209aa69131309cb2c7f24aa0a76bd987?family=NES2);
+ 
+@font-face {font-family: "NES2"; src: url("//db.onlinewebfonts.com/t/209aa69131309cb2c7f24aa0a76bd987.eot"); src:
+url("//db.onlinewebfonts.com/t/209aa69131309cb2c7f24aa0a76bd987.eot?#iefix") format("embedded-opentype"),
+url("//db.onlinewebfonts.com/t/209aa69131309cb2c7f24aa0a76bd987.woff2") format("woff2"),
+url("//db.onlinewebfonts.com/t/209aa69131309cb2c7f24aa0a76bd987.woff") format("woff"),
+url("//db.onlinewebfonts.com/t/209aa69131309cb2c7f24aa0a76bd987.ttf") format("truetype"),
+url("//db.onlinewebfonts.com/t/209aa69131309cb2c7f24aa0a76bd987.svg#NES2") format("svg"); }
+
+body {
+	background-color: #519A56;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: normal;
+	font-size: 1em;
+	margin: 1em;
+	max-width: 100vw;
+    overflow-x: hidden;
+}
+header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 3.5em;
+	z-index: 4;
+
+}
+nav {
+	position: absolute;
+	border-radius: 50px 0 0 50px;
+	text-align: center;
+	padding: 0.5em;
+	top: 3em;
+	right: 0;
+	width: 50%;
+	min-height: 3em;
+	font-size: 0.5em;
+
+	display: flex;
+	flex-wrap: nowrap;
+	align-content: center;
+	justify-content: center;
+	z-index: 4;
+}
+
+
+.nav-open nav {
+	transform: translateX(-100vw);
+}
+
+nav a {
+	color: white;
+	text-shadow: 2px 2px #FF764F;
+	padding: 18px;
+  	text-decoration: none;
+	font-family: "NES2";
+  	font-size: 4em;
+	font-weight: bold;
+  	display: block;
+	z-index: 3;
+	text-align: right;
+}
+nav a:hover {
+	text-decoration: underline;
+}
+
+.nav-grid {
+		margin-left: 60em;
+		
+		}
+
+.toggle {
+	position: absolute;
+	top: 0;
+	right: 0;
+	padding: 1em;
+	z-index: 2;
+	color: black;
+	cursor: pointer;
+}
+
+.toggle:hover {
+	text-decoration: underline;
+}
+
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  padding: 5px;
+  height: 40px;
+  outline: none;
+  color: #535E78;
+	background-color: #535E78;
+  border-radius: 20px 0 0 20px;
+  border:none;
+}
+
+.searchTerm:focus{
+  color: #535E78;
+}
+
+.searchButton {
+  width: 40px;
+  height: 40px;
+  background: #535E78;
+  text-align: center;
+  color: #535E78;
+  border-radius: 0 20px 20px 0;
+  cursor: pointer;
+  font-size: 20px;
+  border:none;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 32%;
+  position: relative;
+  top: 10em;
+  left: 70%;
+	justify-content: right;
+  transform: translate(-50%, -50%);
+	z-index: 1;
+	margin:none;
+}
+
+.logo{
+	width:10%;
+	left: 5em;
+	top:3em;
+	position: relative;
+}
+
+h1	{
+	color:#ffff;
+	font-family: "NES2";
+	text-align: center;
+	}
+h2	{
+	font-family: "NES2";
+	color:#FFD43D;
+	text-align:left;
+	margin-left:-7em;
+	font-size: 2em;
+	}
+
+h3	{
+	color:#ffff;
+	text-align: left;
+
+	}
+h4	{	
+	
+	color:#ffff;
+	text-align: left;
+	font-size:2em;
+	}
+p{
+	color: #ffff;
+	padding-right:4em;
+	padding-left:0em;
+	text-align: left;
+}
+.grid-container {
+	display: flex;
+  flex-wrap: wrap;
+}
+.grid-item {
+  width: 100%;
+	align-content: center;
+}
+.grid-container img{
+	width: calc(100% - (20px * 2));
+	margin: 10px;
+}
+#background{
+	position: relative;
+	width:1600px;
+	height:1100px;
+}
+
+#text-01{
+font-family: font-family: 'Montserrat', sans-serif;
+z-index: 1;
+position: absolute;
+top:8em;
+left:50%;
+width:20em;
+}
+
+.grid-container-01 {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2em;
+}
+.grid-item-01 {
+  width: 100%;
+	align-content: center;
+
+}
+/*game info*/
+.grid-container-02 {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+	padding:5em;
+  margin-top: 2em;
+	background-image: url('img/game-info-back.jpg');
+	background-size: 1800px;
+	background-repeat: no-repeat;
+}
+.grid-item-02 {
+  width: 100%;
+	align-content: center;
+}
+.grid-container-02 img{
+	width: calc(100% - (20px * 2));
+	margin: 30px;
+}
+.grid-item-story {
+  width: 68%;
+	align-content: center;
+	padding-bottom:3em;
+}
+.grid-item-house {
+  width: 68%;
+	align-content: center;
+}
+.grid-item-ship {
+  width: 33%;
+	align-content: center;
+}
+.grid-item-house-02 {
+  width: 33%;
+	align-content: center;
+}
+.grid-item-fire {
+  width: 33%;
+	align-content: center;
+}
+
+/*characters*/
+.grid-container-03 {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2em;
+	padding:5em;
+	background-image: url('img/character-back.jpg');
+	background-size: 1800px;
+	background-repeat: no-repeat;
+}
+.grid-item-03 {
+  width: 100%;
+	align-content: center;
+}
+.grid-container-03 img{
+	width: calc(100% - (20px * 2));
+	margin: 40px;
+}
+.grid-item-characters {
+  width: 68%;
+	align-content: center;
+	padding-bottom:6em;
+}
+.grid-item-main {
+  width: 50%;
+	align-content: center;
+	padding-bottom:6em;
+	border-bottom: 1px solid #FFD43D;
+}
+.grid-item-main-text {
+	width: 50%;
+	align-content: center;
+	padding-top:6em;
+	padding-right:12em;
+	padding-bottom:6em;
+	border-bottom: 1px solid #FFD43D;
+}
+.grid-item-flying {
+  width: 30%;
+	align-content: center;
+	padding-bottom:6em;
+	padding-top:6em;
+}
+.grid-item-line {
+  width: 30%;
+	align-content: center;
+	padding-bottom:6em;
+	padding-top:6em;
+}
+.grid-item-head{
+  width: 30%;
+	align-content: center;
+	padding-bottom:6em;
+	padding-top:6em;
+}
+.grid-item-boss{
+  width: 50%;
+	padding-bottom:6em;
+}
+
+.grid-item-boss-text{
+  width: 50%;
+	align-content: center;
+	padding-top:9em;
+	padding-right:12em;
+	padding-bottom:6em;
+}
+
+/*news*/
+.grid-container-04 {
+	display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2em;
+	padding:5em;
+	background-image: url('img/game-info-back.jpg');
+	background-size: 1800px;
+	background-repeat: no-repeat;
+}
+.grid-item-04 {
+  width: 100%;
+	align-content: center;
+}
+.grid-container-04 img{
+	width: calc(100% - (20px * 2));
+	margin: 40px;
+}
+
+.grid-item-news {
+  width: 50%;
+	align-content: center;
+	padding-bottom:6em;
+}
+.grid-item-news img{
+	max-width: 75%;
+  padding: 0;
+  box-shadow: 5px 10px 8px black;
+}
+.grid-item-news-text {
+	width: 50%;
+	align-content: center;
+	padding-top:15em;
+	padding-right:10em;
+	padding-bottom:6em;
+}
+
+
+/* CATEGORIES */
+
+.game-info {
+	
+	height: 90px;
+	position: absolute;
+	
+	
+}
+
+.news {
+	height: 90px;
+	position: absolute;
+	margin-top: -1.2em;
+	margin-left: 40%;
+
+}
+
+/* SEARCH BAR */
+
+.wrap .search-container {
+  float: right;
+}
+
+.wrap input[type=text] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 14px;
+  border: none;
+  opacity: 30%;
+  border-radius: 30px; 
+  margin-left: 2em;
+  width: 510px;
+  height: 45px;
+}
+
+.wrap .search-container button {
+  float: right;
+  padding: 0px;
+  margin-left: -10px;
+ 
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.wrap .search-container button:hover {
+  background: #ccc;
+}
+
+.image-container .search-icon img {
+	margin-left: -20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
